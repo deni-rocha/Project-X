@@ -1,0 +1,72 @@
+.corpo{
+  height: 100vh;
+  background: #002984;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-areas: "cabecalho" "corpo" "footer"  ;
+  grid-template-columns: auto;
+  grid-template-rows: 15% 70% 15%;
+}
+
+.header {
+  grid-area: cabecalho;
+}
+
+.main {
+  grid-area: corpo;
+
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.lista {
+  margin-block-start: 0;
+  scroll-margin-block-end: 0;
+  padding: 0.5rem;
+  background: #D1D1D1;
+  display: flex;
+  align-items: flex-start;
+  list-style: none;
+}
+
+.list-item {
+  font-size: 0.7rem;
+  padding-right: 2rem;
+}
+.list-item:nth-child(1){
+  margin-left: 2rem;
+}
+.janela {
+  position: relative;
+  transform: translateY(50%);
+  margin: 0 auto;
+  text-align: center;
+  width: 650px;
+  height: 250px;
+  display: grid;
+  grid-template-areas: "Texto1" "Texto2" "Texto3";
+  grid-template-columns: auto;
+  grid-template-rows: 20px 100px 66px;
+}
+
+.janela-item1 {
+  background: #FCFFF5;
+  grid-area: Texto1;
+  padding: 0.3rem 0 0.1rem 0;
+}
+
+.janela-item2 {
+  background: #9EA8A9;
+  grid-area: Texto2;
+  padding: 0.3rem 0 0.1rem 0;
+  
+}
+
+.janela-item3 {
+  background: #9EA8A9;
+  grid-area: Texto3;
+  padding: 1.5rem 0 0.1rem 0;
+}
