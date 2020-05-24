@@ -1,6 +1,7 @@
 .corpo{
   height: 100vh;
   background: #002984;
+  box-shadow: inset 0 0 1em black;
   font-family: 'Press Start 2P', cursive;
   font-size: 0.8rem;
   display: grid;
@@ -40,12 +41,12 @@
   margin-left: 2rem;
 }
 .janela {
+  box-shadow: 30px 20px 2px black;
   position: relative;
-  transform: translateY(50%);
+  transform: translateY(70%);
   margin: 0 auto;
   text-align: center;
   width: 650px;
-  height: 250px;
   display: grid;
   grid-template-areas: "Texto1" "Texto2" "Texto3";
   grid-template-columns: auto;
@@ -55,7 +56,7 @@
 .janela-item1 {
   background: #FCFFF5;
   grid-area: Texto1;
-  padding: 0.3rem 0 0.1rem 0;
+  
 }
 
 .janela-item2 {
@@ -69,4 +70,16 @@
   background: #9EA8A9;
   grid-area: Texto3;
   padding: 1.5rem 0 0.1rem 0;
+}
+
+.janela-item1 p {
+  margin-block-start: 0.3rem;
+  margin-block-end: 0;
+}
+
+.janela-item3 button {
+  padding: 0.2rem 0 0 0;
+  width: 100px;
+  box-shadow: 6px 8px 1px black;
+  
 }
